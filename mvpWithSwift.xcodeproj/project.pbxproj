@@ -16,6 +16,7 @@
 		E1BAC9E5240171510059E20D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1BAC9E4240171510059E20D /* LoginViewController.xib */; };
 		E1BAC9E724017FD40059E20D /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BAC9E624017FD40059E20D /* LoginProtocol.swift */; };
 		E1BAC9E9240180D80059E20D /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BAC9E8240180D80059E20D /* LoginPresenter.swift */; };
+		E1BAC9EC24021A290059E20D /* ProtocolBasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BAC9EB24021A290059E20D /* ProtocolBasePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E1BAC9E4240171510059E20D /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		E1BAC9E624017FD40059E20D /* LoginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
 		E1BAC9E8240180D80059E20D /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		E1BAC9EB24021A290059E20D /* ProtocolBasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolBasePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		E1BAC9CC24016FCE0059E20D /* mvpWithSwift */ = {
 			isa = PBXGroup;
 			children = (
+				E1BAC9EA24021A150059E20D /* Base */,
 				E1BAC9E1240170CB0059E20D /* Login */,
 				E1BAC9CD24016FCE0059E20D /* AppDelegate.swift */,
 				E1BAC9D124016FCE0059E20D /* ViewController.swift */,
@@ -103,6 +106,14 @@
 				E1BAC9E8240180D80059E20D /* LoginPresenter.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		E1BAC9EA24021A150059E20D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E1BAC9EB24021A290059E20D /* ProtocolBasePresenter.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1BAC9D224016FCE0059E20D /* ViewController.swift in Sources */,
+				E1BAC9EC24021A290059E20D /* ProtocolBasePresenter.swift in Sources */,
 				E1BAC9E724017FD40059E20D /* LoginProtocol.swift in Sources */,
 				E1BAC9CE24016FCE0059E20D /* AppDelegate.swift in Sources */,
 				E1BAC9E3240170DD0059E20D /* LoginViewController.swift in Sources */,

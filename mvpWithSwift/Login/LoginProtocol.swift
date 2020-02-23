@@ -8,14 +8,18 @@
 
 import Foundation
 
-protocol ProtocolLoginView {
+protocol ProtocolLoginView: LoginViewController {
     func toggleButton(enable: Bool)
     func showRecoveryPassword()
     func showHome()
     func showRegister()
+    func showButtonActive()
+    func showButtonInvative()
 }
 
-protocol ProtocolLoginPresenter {
-    func validateLogin(username: String, passoword: String)
+protocol ProtocolLoginPresenter: ProtocolBasePresenter {
+    func validateLogin()
+    func emailTextChange(char: String)
+    func passwordTextChange(char: String)
 }
 

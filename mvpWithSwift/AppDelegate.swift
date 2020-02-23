@@ -14,9 +14,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        window?.rootViewController = LoginViewController()
+        window?.rootViewController = self.provideLoginViewController()
         window?.makeKeyAndVisible()
         return true
+    }
+    
+    private func provideLoginViewController() -> UIViewController{
+        let viewController =  LoginViewController()
+        
+        viewController.presenter = LoginPresenter(view: viewController)
+        return viewController
     }
 
 //    // MARK: UISceneSession Lifecycle
